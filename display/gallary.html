@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallary</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.t8rhZtm6DQ3eRPB7DUSv-wHaHa?w=208&h=208&c=7&r=0&o=5&pid=1.7">
+    <style>
+        body{
+           
+                text-align: center;
+            }
+        h1{
+            color: blueviolet;
+        }
+        .grid-container{
+            display:grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,20rem);
+        }
+        .grid-container>div>img{
+            width: 100%;
+            height: 100%;
+         
+        }
+        .grid-container>div>img:hover{
+            filter: brightness(50%);
+            transition: 0.4s all;
+            transform: scale(1.2);
+        }
+        .grid-container>div{
+            position: relative;
+            overflow: hidden;
+
+        }
+       .image-title{
+        position: absolute;
+        bottom: 1rem;
+        z-index: 2;
+        color: white;
+        left: 38%;
+        font-size: 1.2rem;
+        display: block;
+
+       }
+       .image-title:hover{
+        font-size: 1.5rem;
+        transition: 0.4s all;
+       }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallary App</h1>
+    <div class="grid-container">
+    <div><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bkFUVVJFfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Nature photo">
+    <div class="image-title">Nature</div>
+    </div>
+
+    <div><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bkFUVVJFfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="image-title">Sunset </div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bkFUVVJFfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3Vuc2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1580250642511-1660fe42ad58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dm9sY2Fub3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1552843933-189de544dbeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHN1bmFtaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1649785181184-db56c56effcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z29hfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1519852476561-ec618b0183ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cml2ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1506355683710-bd071c0a5828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cml2ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1564053489984-317bbd824340?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWFydGh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    <div><img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVudXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt=""></div>
+    </div>
+</body>
+</html>
